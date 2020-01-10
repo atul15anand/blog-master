@@ -10,14 +10,14 @@ class ArticlesController < ApplicationController
 
 	def destroy
 		@article.destroy
-		flash[:notice] = "Article is deleted"
+		flash[:danger] = "Article is deleted"
 		redirect_to articles_path
 	end
 
 	def create
 		@article =Article.new(article_params)
 		if @article.save
-			flash[:notice] = "Article was created successfully"
+			flash[:success] = "Article was created successfully"
 			redirect_to article_path(@article) #redirect to the show 
 		else
 			render 'new' #else new form empty wala is displayed
@@ -26,7 +26,7 @@ class ArticlesController < ApplicationController
 
 	def update
 		if @article.update(article_params)
-			flash[:notice] = "Article is updated"
+			flash[:success] = "Article is updated"
 			redirect_to article_path(@article)
 		else
 			render 'edit'
