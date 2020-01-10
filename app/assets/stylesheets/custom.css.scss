@@ -1,5 +1,55 @@
-.navbar{
-	bg-color: #08088A;
+$navbar-default-bg: #08088A;
+
+#logo {
+	font-size: 30px;
+	font-weight: bold;
 }
 
-@import 'bootstrap/dist/css/bootstrap';
+#logo {
+	color: #fff;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: asset-url('GYM.jpg');
+	backgound-size: cover;
+	height: 300px;
+}
+
+.jumbotron h1 {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+}
+
+footer a:hover {
+	color :222;
+}
+
+footer big {
+	float: left;
+}
+
+footer ul {
+	float: right;
+	list-style: none;
+}
+
+footer ul li {
+	float: left;
+	margin-left: 15px;
+}
+@import "bootstrap/dist/css/bootstrap";
