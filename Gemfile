@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
+gem 'will_paginate', '3.1.7'
+gem 'bootstrap-will_paginate', '1.0.0'
 # Use sqlite3 as the database for Active Record
 #gem 'bcrpyt', '~>3.1.7'
 # Use Puma as the app server

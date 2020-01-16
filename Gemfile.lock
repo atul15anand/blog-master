@@ -58,7 +58,7 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (9.7.3)
+    autoprefixer-rails (9.7.4)
       execjs
     bcrypt (3.1.13)
     bindex (0.8.1)
@@ -67,6 +67,8 @@ GEM
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     builder (3.2.4)
     byebug (11.0.1)
     capybara (3.30.0)
@@ -79,13 +81,13 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     concurrent-ruby (1.1.5)
-    crass (1.0.5)
+    crass (1.0.6)
     erubi (1.9.0)
     execjs (2.7.0)
-    ffi (1.11.3)
+    ffi (1.12.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.8.1)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
@@ -200,6 +202,7 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
+    will_paginate (3.1.7)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.2.2)
@@ -211,6 +214,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   bootstrap-sass (>= 3.4.1)
+  bootstrap-will_paginate (= 1.0.0)
   byebug
   capybara (>= 2.15)
   jbuilder (~> 2.7)
@@ -228,6 +232,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 4.0)
+  will_paginate (= 3.1.7)
 
 RUBY VERSION
    ruby 2.7.0p0
