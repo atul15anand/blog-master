@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
 		@article.user = User.first
 		if @article.save
 			flash[:success] = "Article was created successfully"
-			redirect_to article_path(@article) #redirect to the show 
+			redirect_to article_path(@article) #redirect to the show
 		else
 			render 'new' #else new form empty wala is displayed
 		end
