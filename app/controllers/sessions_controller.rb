@@ -18,7 +18,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    debugger
     # destroy session
     session[:user_id]= nil
     flash[:success] = "Successfully logged out."
